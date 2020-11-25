@@ -7,14 +7,17 @@
       <link rel="stylesheet" href="style.css">
     </head>
 <body>
-
+    <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Latitude Button -->
         <a class="navbar-brand" href="index.html" id="logo">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span> 
         </button>
+        <!-- Right side of navbar -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
+            <!-- Plots dropdown menu -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Plots
@@ -27,10 +30,11 @@
                 </div>
               </li>
             
-            
+            <!-- Comparisons link -->
             <li class="nav-item">
               <a class="nav-link" href="comparison.html">Comparisons</a>
             </li>
+            <!-- Data link -->
             <li class="nav-item">
               <a class="nav-link" href="data.html">Data</a>
             </li>
@@ -41,15 +45,45 @@
     <!-- <br/>  -->
     <!-- removed line break to code in "mt-2" into class attribute.  see link: for how to adjust margin in .css file if there is an error with mobile -->
 
+    <!-- Left box with image and text -->
     <div class="container">
         <div class="row">
-            <div class="mt-4 col-7 text-box">
-                <h2>Summary Latitude vs X</h2>
-                <img src="trooper.jpeg" class="pull-left"> <p>Text Text Text Text Text Text Text Text TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</p>
-            </div>
-            <div class="col-1"></div>
-            <div class="mt-4 col-4 text-box">
-                <h2>Visualizations</h2>
+          <div class="col-lg-7">
+            <div class="col-md-12">
+                <div class="content_box">
+                  <h2>Summary: Latitude vs. X</h2>
+                  <hr>
+                  <div class = "fig1">
+                    <img src="../Assets/Visualizations/Fig1.png" class="fig1 float-left" width="50%"> 
+                  </div>
+                  <p>What is the weather like as we approach the equator?  By employing the OpenWeatherMap API on a random sample of over 500 cities across the world, we analyzed how weather changes based on the proximity to the equator.</p>
+                  <p>The dataset collected from the API includes temperature, cloudiness, wind speed, and humidity based on a city’s geographical coordinates.  The source data and the visualizations created with Matplotlib, can be found on this site.</p>
+                </div>
+              </div>
+          </div>
+       
+            <!-- <div class="col-1"></div> -->
+            <div class="col-lg-5">
+              <div class="col-md-12">
+                <div class="content_box">
+                  <h2>Visualizations</h2>
+                  <hr>
+                  <div class="row">
+                    <div class="col-3 col-md-6">
+                      <a href="maxtemp.html"><img src="../Assets/Visualizations/Fig1.png"  width="100%" alt="Maximum Temperature" title="Maximum Temperature"></a>
+                    </div>
+                    <div class="col-3 col-md-6">
+                      <a href="humidity.html"><img src="../Assets/Visualizations/Fig2.png" width="100%" alt="Humidity" title="Humidity"></a> 
+                    </div>
+                    <div class="col-3 col-md-6">
+                      <a href="cloudiness.html"><img src="../Assets/Visualizations/Fig3.png" width="100%" alt="Cloudiness" title="Cloudiness"></a> 
+                    </div>
+                    <div class="col-3 col-md-6">
+                      <a href="windspeed.html"><img src="../Assets/Visualizations/Fig4.png" width="100%" alt="Windspeed" title="Windspeed"></a> 
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
     </div>
