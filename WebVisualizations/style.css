@@ -4,20 +4,18 @@
     color: white;
     margin: 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
 }
 
 .navbar-brand {
     margin-left: 5px;
     padding: 10px
-
 }
 
 body {
-    background: rgb(212, 212, 212);
+    background: rgb(212, 212, 212) !important;
 }
 
-.content_box {
+.content-box {
     margin-top: 50px; 
     margin-bottom: 50px;
     padding-top: 15px;
@@ -25,12 +23,27 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     background-color: white;
-
 }
+
 
 h2 {
     color:#4AA09B;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h4 {
+    color:#4AA09B;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.title {
+    padding-top: 30px;
+    margin: 0px;
+}
+
+#comparisons {
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
 @media (max-width: 991px) {
@@ -41,11 +54,20 @@ h2 {
     }
         
     .navbar.bg-light {
-            background-color: #4AA09B!important;
+        background-color: #4AA09B!important;
     }
 
     .navbar-collapse {
         background-color: #f8f9fa;
+    }
+
+    .small-screen {
+        width: 100%;
+    }
+
+    #comparisons {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
 }

@@ -2,19 +2,22 @@
 <html lang="en">
   <head>
       <meta charset="UTF-8">
-      <title>Bootstrap Components</title>
+      <title>Comparisons</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="style.css">
     </head>
 <body>
-
+    <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Latitude Button -->
         <a class="navbar-brand" href="index.html" id="logo">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span> 
         </button>
+        <!-- Right side of navbar -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
+            <!-- Plots dropdown menu -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Plots
@@ -27,32 +30,45 @@
                 </div>
               </li>
             
-            
+            <!-- Comparisons link -->
             <li class="nav-item">
               <a class="nav-link" href="comparison.html">Comparisons</a>
             </li>
+            <!-- Data link -->
             <li class="nav-item">
               <a class="nav-link" href="data.html">Data</a>
             </li>
           </ul>
         </div>
     </nav>
-
-    <!-- <br/>  -->
-    <!-- removed line break to code in "mt-2" into class attribute.  see link: for how to adjust margin in .css file if there is an error with mobile -->
-
-    <div class="container">
-        <div class="row">
-            <div class="mt-4 col-7 text-box">
-                <h2>Summary Latitude vs X</h2>
-                <img src="trooper.jpeg" class="pull-left"> <p>Text Text Text Text Text Text Text Text TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</p>
+        <!-- Add plots to container -->
+        <div class="containter content-box" id="comparisons">
+          <h2>Comparison: Latitude vs. X</h2>
+          <hr>
+          <p>Click on any plot for an in-depth analysis.</p>
+          <div class="row">
+            <div class="col-lg-6">
+              <h4 class="title text-center">vs. Max Temperature</h4>
+              <a href="maxtemp.html"><img src="../Assets/Visualizations/Fig1.png"  width="100%" alt="Maximum Temperature" title="Maximum Temperature"></a>
             </div>
-            <div class="col-1"></div>
-            <div class="mt-4 col-4 text-box">
-                <h2>Visualizations</h2>
+            <hr class="small-screen"/>
+            <div class="col-lg-6">
+              <h4 class="title text-center">vs. Humidity</h4>
+              <a href="humidity.html"><img src="../Assets/Visualizations/Fig2.png" width="100%" alt="Humidity" title="Humidity"></a> 
             </div>
+            <hr class="small-screen"/>
+            <div class="col-lg-6">
+              <h4 class="title text-center">vs. Cloudiness</h4>
+              <a href="cloudiness.html"><img src="../Assets/Visualizations/Fig3.png" width="100%" alt="Cloudiness" title="Cloudiness"></a> 
+            </div>
+            <hr class="small-screen"/>
+            <div class="col-lg-6">
+              <h4 class="title text-center">vs. Windspeed</h4>
+              <a href="windspeed.html"><img src="../Assets/Visualizations/Fig4.png" width="100%" alt="Windspeed" title="Windspeed"></a> 
+            </div>
+          </div>
         </div>
-    </div>
+     
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
