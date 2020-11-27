@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
       <meta charset="UTF-8">
-      <title>Bootstrap Components</title>
+      <title>Windspeed</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="style.css">
     </head>
@@ -38,24 +38,50 @@
         </div>
     </nav>
 
-    <!-- <br/>  -->
-    <!-- removed line break to code in "mt-2" into class attribute.  see link: for how to adjust margin in .css file if there is an error with mobile -->
+   <!-- Left box with image and text -->
+   <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="col-md-12">
+            <div class="content-box">
+              <h2>Windspeed</h2>
+              <hr>
+              <img src="../Assets/Visualizations/Fig4.png" width="100%"> 
+              <br>
+              <p>The dataset for this day indicates a lack of relationship between latitude and windspeed.  Many factors contribute to wind speed 
+                such as weather conditions, air pressure, and the Earth's tilt, which could explain the absence of a relationship.
+              </p>  
+            </div>
+          </div>
+      </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="mt-4 col-7 text-box">
-                <h2>Summary Latitude vs X</h2>
-                <img src="trooper.jpeg" class="pull-left"> <p>Text Text Text Text Text Text Text Text TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</p>
+        <div class="col-lg-5">
+          <div class="col-md-12">
+            <div class="content-box">
+              <h2>Visualizations</h2>
+              <hr>
+              <div class="row">
+                <div class="col-3 col-md-6">
+                  <a href="maxtemp.html"><img src="../Assets/Visualizations/Fig1.png"  width="100%" alt="Maximum Temperature" title="Maximum Temperature"></a>
+                </div>
+                <div class="col-3 col-md-6">
+                  <a href="humidity.html"><img src="../Assets/Visualizations/Fig2.png" width="100%" alt="Humidity" title="Humidity"></a> 
+                </div>
+                <div class="col-3 col-md-6">
+                  <a href="cloudiness.html"><img src="../Assets/Visualizations/Fig3.png" width="100%" alt="Cloudiness" title="Cloudiness"></a> 
+                </div>
+                <div class="col-3 col-md-6">
+                  <a href="windspeed.html"><img src="../Assets/Visualizations/Fig4.png" width="100%" alt="Windspeed" title="Windspeed"></a> 
+                </div>
+              </div>
             </div>
-            <div class="col-1"></div>
-            <div class="mt-4 col-4 text-box">
-                <h2>Visualizations</h2>
-            </div>
+          </div>
         </div>
     </div>
+</div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
