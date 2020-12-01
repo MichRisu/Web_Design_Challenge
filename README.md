@@ -30,4 +30,4 @@ The website should also be responsive based on the size of the screen.
 
 _______________________________
 
-*Please click here: *
+*Please click here https://michrisu.github.io/Web_Design_Challenge/WebVisualizations/index.html*
